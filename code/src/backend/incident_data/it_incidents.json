@@ -1,0 +1,352 @@
+[
+  {
+    "description": "Impact Level: Medium\nAffected Service: Data Analytics\nComponent: Authentication Service\nIssue: Certificate Chain Errors\n\nMultiple users reported certificate chain errors in the Authentication Service system. This is affecting Data Analytics functionality.\nInitial investigation shows potential configuration issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Check Authentication Service health status\n2. Analyze recent changes and deployments\n3. Investigate root cause and apply fix\n4. Test functionality\n5. Update runbook with findings",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/84139-resolving-certificate-chain-errors-in-authentication service",
+    "component": "Authentication Service",
+    "issue_type": "Certificate Chain Errors"
+  },
+  {
+    "description": "Impact Level: Medium\nAffected Service: Payment Processing\nComponent: Message Queue\nIssue: Storage Capacity Alerts\n\nMultiple users reported storage capacity alerts in the Message Queue system. This is affecting Payment Processing functionality.\nInitial investigation shows potential configuration issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Check Message Queue health status\n2. Analyze recent changes and deployments\n3. Investigate root cause and apply fix\n4. Test functionality\n5. Update runbook with findings",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/53178-resolving-storage-capacity-alerts-in-message queue",
+    "component": "Message Queue",
+    "issue_type": "Storage Capacity Alerts"
+  },
+  {
+    "description": "Impact Level: High\nAffected Service: Payment Processing\nComponent: Authentication Service\nIssue: High Authentication Latency\n\nMultiple users reported high authentication latency in the Authentication Service system. This is affecting Payment Processing functionality.\nInitial investigation shows potential system issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Check Authentication Service health status\n2. Analyze recent changes and deployments\n3. Investigate root cause and apply fix\n4. Test functionality\n5. Update runbook with findings",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/36888-resolving-high-authentication-latency-in-authentication service",
+    "component": "Authentication Service",
+    "issue_type": "High Authentication Latency"
+  },
+  {
+    "description": "Impact Level: Critical\nAffected Service: Payment Processing\nComponent: Load Balancer\nIssue: Backend Pool Degradation\n\nMultiple users reported backend pool degradation in the Load Balancer system. This is affecting Payment Processing functionality.\nInitial investigation shows potential system issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Check Load Balancer health status\n2. Analyze recent changes and deployments\n3. Investigate root cause and apply fix\n4. Test functionality\n5. Update runbook with findings",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/24570-resolving-backend-pool-degradation-in-load balancer",
+    "component": "Load Balancer",
+    "issue_type": "Backend Pool Degradation"
+  },
+  {
+    "description": "Impact Level: High\nAffected Service: Payment Processing\nComponent: Message Queue\nIssue: Consumer Group Lag\n\nMultiple users reported consumer group lag in the Message Queue system. This is affecting Payment Processing functionality.\nInitial investigation shows potential resource issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Check Message Queue health status\n2. Analyze recent changes and deployments\n3. Investigate root cause and apply fix\n4. Test functionality\n5. Update runbook with findings",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/41223-resolving-consumer-group-lag-in-message queue",
+    "component": "Message Queue",
+    "issue_type": "Consumer Group Lag"
+  },
+  {
+    "description": "Impact Level: Medium\nAffected Service: User Authentication\nComponent: Message Queue\nIssue: Storage Capacity Alerts\n\nMultiple users reported storage capacity alerts in the Message Queue system. This is affecting User Authentication functionality.\nInitial investigation shows potential configuration issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Check Message Queue health status\n2. Analyze recent changes and deployments\n3. Investigate root cause and apply fix\n4. Test functionality\n5. Update runbook with findings",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/89162-resolving-storage-capacity-alerts-in-message queue",
+    "component": "Message Queue",
+    "issue_type": "Storage Capacity Alerts"
+  },
+  {
+    "description": "Impact Level: High\nAffected Service: User Authentication\nComponent: Database\nIssue: Replication Lag\n\nMultiple users reported replication lag in the Database system. This is affecting User Authentication functionality.\nInitial investigation shows potential system issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Check Database health status\n2. Analyze recent changes and deployments\n3. Investigate root cause and apply fix\n4. Test functionality\n5. Update runbook with findings",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/63497-resolving-replication-lag-in-database",
+    "component": "Database",
+    "issue_type": "Replication Lag"
+  },
+  {
+    "description": "Impact Level: Low\nAffected Service: Payment Processing\nComponent: API Gateway\nIssue: Rate Limiting Errors\n\nMultiple users reported rate limiting errors in the API Gateway system. This is affecting Payment Processing functionality.\nInitial investigation shows potential resource issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Identify affected API Gateway instances\n2. Review system metrics and logs\n3. Adjust rate limit thresholds and policies\n4. Validate service restoration\n5. Document findings in post-mortem",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/98192-resolving-rate-limiting-errors-in-api gateway",
+    "component": "API Gateway",
+    "issue_type": "Rate Limiting Errors"
+  },
+  {
+    "description": "Impact Level: Medium\nAffected Service: Data Analytics\nComponent: Database\nIssue: Replication Lag\n\nMultiple users reported replication lag in the Database system. This is affecting Data Analytics functionality.\nInitial investigation shows potential configuration issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Assess impact on dependent services\n2. Review Database configuration\n3. Investigate root cause and apply fix\n4. Implement preventive measures\n5. Update monitoring thresholds",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/30457-resolving-replication-lag-in-database",
+    "component": "Database",
+    "issue_type": "Replication Lag"
+  },
+  {
+    "description": "Impact Level: High\nAffected Service: Data Analytics\nComponent: API Gateway\nIssue: High Latency\n\nMultiple users reported high latency in the API Gateway system. This is affecting Data Analytics functionality.\nInitial investigation shows potential configuration issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Assess impact on dependent services\n2. Review API Gateway configuration\n3. Investigate root cause and apply fix\n4. Implement preventive measures\n5. Update monitoring thresholds",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/47349-resolving-high-latency-in-api gateway",
+    "component": "API Gateway",
+    "issue_type": "High Latency"
+  },
+  {
+    "description": "Impact Level: Medium\nAffected Service: Data Analytics\nComponent: Load Balancer\nIssue: Backend Pool Degradation\n\nMultiple users reported backend pool degradation in the Load Balancer system. This is affecting Data Analytics functionality.\nInitial investigation shows potential network issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Check Load Balancer health status\n2. Analyze recent changes and deployments\n3. Investigate root cause and apply fix\n4. Test functionality\n5. Update runbook with findings",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/92209-resolving-backend-pool-degradation-in-load balancer",
+    "component": "Load Balancer",
+    "issue_type": "Backend Pool Degradation"
+  },
+  {
+    "description": "Impact Level: Medium\nAffected Service: User Authentication\nComponent: API Gateway\nIssue: High Latency\n\nMultiple users reported high latency in the API Gateway system. This is affecting User Authentication functionality.\nInitial investigation shows potential network issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Check API Gateway health status\n2. Analyze recent changes and deployments\n3. Investigate root cause and apply fix\n4. Test functionality\n5. Update runbook with findings",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/45579-resolving-high-latency-in-api gateway",
+    "component": "API Gateway",
+    "issue_type": "High Latency"
+  },
+  {
+    "description": "Impact Level: Medium\nAffected Service: Data Analytics\nComponent: Authentication Service\nIssue: Session Management Issues\n\nMultiple users reported session management issues in the Authentication Service system. This is affecting Data Analytics functionality.\nInitial investigation shows potential configuration issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Identify affected Authentication Service instances\n2. Review system metrics and logs\n3. Investigate root cause and apply fix\n4. Validate service restoration\n5. Document findings in post-mortem",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/61241-resolving-session-management-issues-in-authentication service",
+    "component": "Authentication Service",
+    "issue_type": "Session Management Issues"
+  },
+  {
+    "description": "Impact Level: High\nAffected Service: Data Analytics\nComponent: Authentication Service\nIssue: LDAP Sync Failure\n\nMultiple users reported ldap sync failure in the Authentication Service system. This is affecting Data Analytics functionality.\nInitial investigation shows potential system issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Check Authentication Service health status\n2. Analyze recent changes and deployments\n3. Investigate root cause and apply fix\n4. Test functionality\n5. Update runbook with findings",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/76932-resolving-ldap-sync-failure-in-authentication service",
+    "component": "Authentication Service",
+    "issue_type": "LDAP Sync Failure"
+  },
+  {
+    "description": "Impact Level: Medium\nAffected Service: User Authentication\nComponent: Database\nIssue: Replication Lag\n\nMultiple users reported replication lag in the Database system. This is affecting User Authentication functionality.\nInitial investigation shows potential configuration issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Check Database health status\n2. Analyze recent changes and deployments\n3. Investigate root cause and apply fix\n4. Test functionality\n5. Update runbook with findings",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/10906-resolving-replication-lag-in-database",
+    "component": "Database",
+    "issue_type": "Replication Lag"
+  },
+  {
+    "description": "Impact Level: Critical\nAffected Service: Data Analytics\nComponent: Load Balancer\nIssue: SSL Handshake Errors\n\nMultiple users reported ssl handshake errors in the Load Balancer system. This is affecting Data Analytics functionality.\nInitial investigation shows potential network issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Check Load Balancer health status\n2. Analyze recent changes and deployments\n3. Investigate root cause and apply fix\n4. Test functionality\n5. Update runbook with findings",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/33898-resolving-ssl-handshake-errors-in-load balancer",
+    "component": "Load Balancer",
+    "issue_type": "SSL Handshake Errors"
+  },
+  {
+    "description": "Impact Level: Critical\nAffected Service: User Authentication\nComponent: Message Queue\nIssue: Storage Capacity Alerts\n\nMultiple users reported storage capacity alerts in the Message Queue system. This is affecting User Authentication functionality.\nInitial investigation shows potential system issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Check Message Queue health status\n2. Analyze recent changes and deployments\n3. Investigate root cause and apply fix\n4. Test functionality\n5. Update runbook with findings",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/45849-resolving-storage-capacity-alerts-in-message queue",
+    "component": "Message Queue",
+    "issue_type": "Storage Capacity Alerts"
+  },
+  {
+    "description": "Impact Level: Low\nAffected Service: User Authentication\nComponent: Database\nIssue: Slow Query Performance\n\nMultiple users reported slow query performance in the Database system. This is affecting User Authentication functionality.\nInitial investigation shows potential system issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Check Database health status\n2. Analyze recent changes and deployments\n3. Analyze and optimize query execution plans\n4. Test functionality\n5. Update runbook with findings",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/29794-resolving-slow-query-performance-in-database",
+    "component": "Database",
+    "issue_type": "Slow Query Performance"
+  },
+  {
+    "description": "Impact Level: High\nAffected Service: User Authentication\nComponent: Authentication Service\nIssue: Token Validation Errors\n\nMultiple users reported token validation errors in the Authentication Service system. This is affecting User Authentication functionality.\nInitial investigation shows potential configuration issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Check Authentication Service health status\n2. Analyze recent changes and deployments\n3. Review token configuration and key rotation\n4. Test functionality\n5. Update runbook with findings",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/17777-resolving-token-validation-errors-in-authentication service",
+    "component": "Authentication Service",
+    "issue_type": "Token Validation Errors"
+  },
+  {
+    "description": "Impact Level: Low\nAffected Service: Customer Portal\nComponent: Authentication Service\nIssue: Certificate Chain Errors\n\nMultiple users reported certificate chain errors in the Authentication Service system. This is affecting Customer Portal functionality.\nInitial investigation shows potential network issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Assess impact on dependent services\n2. Review Authentication Service configuration\n3. Investigate root cause and apply fix\n4. Implement preventive measures\n5. Update monitoring thresholds",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/87188-resolving-certificate-chain-errors-in-authentication service",
+    "component": "Authentication Service",
+    "issue_type": "Certificate Chain Errors"
+  },
+  {
+    "description": "Impact Level: High\nAffected Service: Customer Portal\nComponent: Database\nIssue: Replication Lag\n\nMultiple users reported replication lag in the Database system. This is affecting Customer Portal functionality.\nInitial investigation shows potential network issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Assess impact on dependent services\n2. Review Database configuration\n3. Investigate root cause and apply fix\n4. Implement preventive measures\n5. Update monitoring thresholds",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/72556-resolving-replication-lag-in-database",
+    "component": "Database",
+    "issue_type": "Replication Lag"
+  },
+  {
+    "description": "Impact Level: Critical\nAffected Service: User Authentication\nComponent: Message Queue\nIssue: Queue Backup\n\nMultiple users reported queue backup in the Message Queue system. This is affecting User Authentication functionality.\nInitial investigation shows potential system issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Assess impact on dependent services\n2. Review Message Queue configuration\n3. Scale consumers and clear backlog\n4. Implement preventive measures\n5. Update monitoring thresholds",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/92438-resolving-queue-backup-in-message queue",
+    "component": "Message Queue",
+    "issue_type": "Queue Backup"
+  },
+  {
+    "description": "Impact Level: Low\nAffected Service: Data Analytics\nComponent: Load Balancer\nIssue: Health Check Failures\n\nMultiple users reported health check failures in the Load Balancer system. This is affecting Data Analytics functionality.\nInitial investigation shows potential network issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Assess impact on dependent services\n2. Review Load Balancer configuration\n3. Verify backend service health and connectivity\n4. Implement preventive measures\n5. Update monitoring thresholds",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/63124-resolving-health-check-failures-in-load balancer",
+    "component": "Load Balancer",
+    "issue_type": "Health Check Failures"
+  },
+  {
+    "description": "Impact Level: Low\nAffected Service: Data Analytics\nComponent: Database\nIssue: High CPU Usage\n\nMultiple users reported high cpu usage in the Database system. This is affecting Data Analytics functionality.\nInitial investigation shows potential resource issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Identify affected Database instances\n2. Review system metrics and logs\n3. Scale up resources or optimize queries\n4. Validate service restoration\n5. Document findings in post-mortem",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/29978-resolving-high-cpu-usage-in-database",
+    "component": "Database",
+    "issue_type": "High CPU Usage"
+  },
+  {
+    "description": "Impact Level: Critical\nAffected Service: Data Analytics\nComponent: Authentication Service\nIssue: Certificate Chain Errors\n\nMultiple users reported certificate chain errors in the Authentication Service system. This is affecting Data Analytics functionality.\nInitial investigation shows potential system issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Assess impact on dependent services\n2. Review Authentication Service configuration\n3. Investigate root cause and apply fix\n4. Implement preventive measures\n5. Update monitoring thresholds",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/65158-resolving-certificate-chain-errors-in-authentication service",
+    "component": "Authentication Service",
+    "issue_type": "Certificate Chain Errors"
+  },
+  {
+    "description": "Impact Level: Critical\nAffected Service: Internal Tools\nComponent: Database\nIssue: High CPU Usage\n\nMultiple users reported high cpu usage in the Database system. This is affecting Internal Tools functionality.\nInitial investigation shows potential resource issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Identify affected Database instances\n2. Review system metrics and logs\n3. Scale up resources or optimize queries\n4. Validate service restoration\n5. Document findings in post-mortem",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/74111-resolving-high-cpu-usage-in-database",
+    "component": "Database",
+    "issue_type": "High CPU Usage"
+  },
+  {
+    "description": "Impact Level: Medium\nAffected Service: User Authentication\nComponent: Authentication Service\nIssue: Session Management Issues\n\nMultiple users reported session management issues in the Authentication Service system. This is affecting User Authentication functionality.\nInitial investigation shows potential resource issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Identify affected Authentication Service instances\n2. Review system metrics and logs\n3. Investigate root cause and apply fix\n4. Validate service restoration\n5. Document findings in post-mortem",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/94918-resolving-session-management-issues-in-authentication service",
+    "component": "Authentication Service",
+    "issue_type": "Session Management Issues"
+  },
+  {
+    "description": "Impact Level: Medium\nAffected Service: User Authentication\nComponent: Database\nIssue: Connection Pool Exhaustion\n\nMultiple users reported connection pool exhaustion in the Database system. This is affecting User Authentication functionality.\nInitial investigation shows potential resource issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Identify affected Database instances\n2. Review system metrics and logs\n3. Adjust pool size and timeout settings\n4. Validate service restoration\n5. Document findings in post-mortem",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/81786-resolving-connection-pool-exhaustion-in-database",
+    "component": "Database",
+    "issue_type": "Connection Pool Exhaustion"
+  },
+  {
+    "description": "Impact Level: Medium\nAffected Service: Internal Tools\nComponent: Load Balancer\nIssue: SSL Handshake Errors\n\nMultiple users reported ssl handshake errors in the Load Balancer system. This is affecting Internal Tools functionality.\nInitial investigation shows potential system issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Identify affected Load Balancer instances\n2. Review system metrics and logs\n3. Investigate root cause and apply fix\n4. Validate service restoration\n5. Document findings in post-mortem",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/11478-resolving-ssl-handshake-errors-in-load balancer",
+    "component": "Load Balancer",
+    "issue_type": "SSL Handshake Errors"
+  },
+  {
+    "description": "Impact Level: High\nAffected Service: Internal Tools\nComponent: Database\nIssue: High CPU Usage\n\nMultiple users reported high cpu usage in the Database system. This is affecting Internal Tools functionality.\nInitial investigation shows potential system issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Identify affected Database instances\n2. Review system metrics and logs\n3. Scale up resources or optimize queries\n4. Validate service restoration\n5. Document findings in post-mortem",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/65531-resolving-high-cpu-usage-in-database",
+    "component": "Database",
+    "issue_type": "High CPU Usage"
+  },
+  {
+    "description": "Impact Level: High\nAffected Service: User Authentication\nComponent: API Gateway\nIssue: Authentication Failures\n\nMultiple users reported authentication failures in the API Gateway system. This is affecting User Authentication functionality.\nInitial investigation shows potential resource issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Identify affected API Gateway instances\n2. Review system metrics and logs\n3. Investigate root cause and apply fix\n4. Validate service restoration\n5. Document findings in post-mortem",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/60843-resolving-authentication-failures-in-api gateway",
+    "component": "API Gateway",
+    "issue_type": "Authentication Failures"
+  },
+  {
+    "description": "Impact Level: Medium\nAffected Service: User Authentication\nComponent: Database\nIssue: High CPU Usage\n\nMultiple users reported high cpu usage in the Database system. This is affecting User Authentication functionality.\nInitial investigation shows potential resource issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Identify affected Database instances\n2. Review system metrics and logs\n3. Scale up resources or optimize queries\n4. Validate service restoration\n5. Document findings in post-mortem",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/73085-resolving-high-cpu-usage-in-database",
+    "component": "Database",
+    "issue_type": "High CPU Usage"
+  },
+  {
+    "description": "Impact Level: High\nAffected Service: Payment Processing\nComponent: API Gateway\nIssue: Invalid Route Configuration\n\nMultiple users reported invalid route configuration in the API Gateway system. This is affecting Payment Processing functionality.\nInitial investigation shows potential configuration issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Check API Gateway health status\n2. Analyze recent changes and deployments\n3. Investigate root cause and apply fix\n4. Test functionality\n5. Update runbook with findings",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/35664-resolving-invalid-route-configuration-in-api gateway",
+    "component": "API Gateway",
+    "issue_type": "Invalid Route Configuration"
+  },
+  {
+    "description": "Impact Level: High\nAffected Service: Payment Processing\nComponent: API Gateway\nIssue: SSL Certificate Expiration\n\nMultiple users reported ssl certificate expiration in the API Gateway system. This is affecting Payment Processing functionality.\nInitial investigation shows potential network issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Identify affected API Gateway instances\n2. Review system metrics and logs\n3. Investigate root cause and apply fix\n4. Validate service restoration\n5. Document findings in post-mortem",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/22818-resolving-ssl-certificate-expiration-in-api gateway",
+    "component": "API Gateway",
+    "issue_type": "SSL Certificate Expiration"
+  },
+  {
+    "description": "Impact Level: Medium\nAffected Service: Data Analytics\nComponent: Authentication Service\nIssue: Token Validation Errors\n\nMultiple users reported token validation errors in the Authentication Service system. This is affecting Data Analytics functionality.\nInitial investigation shows potential network issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Check Authentication Service health status\n2. Analyze recent changes and deployments\n3. Review token configuration and key rotation\n4. Test functionality\n5. Update runbook with findings",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/10914-resolving-token-validation-errors-in-authentication service",
+    "component": "Authentication Service",
+    "issue_type": "Token Validation Errors"
+  },
+  {
+    "description": "Impact Level: Low\nAffected Service: User Authentication\nComponent: Load Balancer\nIssue: Connection Timeouts\n\nMultiple users reported connection timeouts in the Load Balancer system. This is affecting User Authentication functionality.\nInitial investigation shows potential resource issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Identify affected Load Balancer instances\n2. Review system metrics and logs\n3. Investigate root cause and apply fix\n4. Validate service restoration\n5. Document findings in post-mortem",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/49108-resolving-connection-timeouts-in-load balancer",
+    "component": "Load Balancer",
+    "issue_type": "Connection Timeouts"
+  },
+  {
+    "description": "Impact Level: High\nAffected Service: Data Analytics\nComponent: Database\nIssue: Storage Space Critical\n\nMultiple users reported storage space critical in the Database system. This is affecting Data Analytics functionality.\nInitial investigation shows potential network issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Check Database health status\n2. Analyze recent changes and deployments\n3. Investigate root cause and apply fix\n4. Test functionality\n5. Update runbook with findings",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/82897-resolving-storage-space-critical-in-database",
+    "component": "Database",
+    "issue_type": "Storage Space Critical"
+  },
+  {
+    "description": "Impact Level: Medium\nAffected Service: Payment Processing\nComponent: API Gateway\nIssue: Rate Limiting Errors\n\nMultiple users reported rate limiting errors in the API Gateway system. This is affecting Payment Processing functionality.\nInitial investigation shows potential resource issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Assess impact on dependent services\n2. Review API Gateway configuration\n3. Adjust rate limit thresholds and policies\n4. Implement preventive measures\n5. Update monitoring thresholds",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/68659-resolving-rate-limiting-errors-in-api gateway",
+    "component": "API Gateway",
+    "issue_type": "Rate Limiting Errors"
+  },
+  {
+    "description": "Impact Level: High\nAffected Service: User Authentication\nComponent: Message Queue\nIssue: Consumer Group Lag\n\nMultiple users reported consumer group lag in the Message Queue system. This is affecting User Authentication functionality.\nInitial investigation shows potential resource issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Check Message Queue health status\n2. Analyze recent changes and deployments\n3. Investigate root cause and apply fix\n4. Test functionality\n5. Update runbook with findings",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/89950-resolving-consumer-group-lag-in-message queue",
+    "component": "Message Queue",
+    "issue_type": "Consumer Group Lag"
+  },
+  {
+    "description": "Impact Level: High\nAffected Service: User Authentication\nComponent: Authentication Service\nIssue: LDAP Sync Failure\n\nMultiple users reported ldap sync failure in the Authentication Service system. This is affecting User Authentication functionality.\nInitial investigation shows potential system issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Check Authentication Service health status\n2. Analyze recent changes and deployments\n3. Investigate root cause and apply fix\n4. Test functionality\n5. Update runbook with findings",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/97630-resolving-ldap-sync-failure-in-authentication service",
+    "component": "Authentication Service",
+    "issue_type": "LDAP Sync Failure"
+  },
+  {
+    "description": "Impact Level: Low\nAffected Service: Data Analytics\nComponent: API Gateway\nIssue: Invalid Route Configuration\n\nMultiple users reported invalid route configuration in the API Gateway system. This is affecting Data Analytics functionality.\nInitial investigation shows potential configuration issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Check API Gateway health status\n2. Analyze recent changes and deployments\n3. Investigate root cause and apply fix\n4. Test functionality\n5. Update runbook with findings",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/74173-resolving-invalid-route-configuration-in-api gateway",
+    "component": "API Gateway",
+    "issue_type": "Invalid Route Configuration"
+  },
+  {
+    "description": "Impact Level: Medium\nAffected Service: Payment Processing\nComponent: Message Queue\nIssue: Consumer Group Lag\n\nMultiple users reported consumer group lag in the Message Queue system. This is affecting Payment Processing functionality.\nInitial investigation shows potential resource issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Identify affected Message Queue instances\n2. Review system metrics and logs\n3. Investigate root cause and apply fix\n4. Validate service restoration\n5. Document findings in post-mortem",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/42662-resolving-consumer-group-lag-in-message queue",
+    "component": "Message Queue",
+    "issue_type": "Consumer Group Lag"
+  },
+  {
+    "description": "Impact Level: Low\nAffected Service: User Authentication\nComponent: Authentication Service\nIssue: High Authentication Latency\n\nMultiple users reported high authentication latency in the Authentication Service system. This is affecting User Authentication functionality.\nInitial investigation shows potential resource issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Assess impact on dependent services\n2. Review Authentication Service configuration\n3. Investigate root cause and apply fix\n4. Implement preventive measures\n5. Update monitoring thresholds",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/34287-resolving-high-authentication-latency-in-authentication service",
+    "component": "Authentication Service",
+    "issue_type": "High Authentication Latency"
+  },
+  {
+    "description": "Impact Level: High\nAffected Service: User Authentication\nComponent: Load Balancer\nIssue: Backend Pool Degradation\n\nMultiple users reported backend pool degradation in the Load Balancer system. This is affecting User Authentication functionality.\nInitial investigation shows potential system issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Check Load Balancer health status\n2. Analyze recent changes and deployments\n3. Investigate root cause and apply fix\n4. Test functionality\n5. Update runbook with findings",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/23854-resolving-backend-pool-degradation-in-load balancer",
+    "component": "Load Balancer",
+    "issue_type": "Backend Pool Degradation"
+  },
+  {
+    "description": "Impact Level: Low\nAffected Service: Customer Portal\nComponent: Message Queue\nIssue: Broker Connectivity Issues\n\nMultiple users reported broker connectivity issues in the Message Queue system. This is affecting Customer Portal functionality.\nInitial investigation shows potential resource issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Check Message Queue health status\n2. Analyze recent changes and deployments\n3. Investigate root cause and apply fix\n4. Test functionality\n5. Update runbook with findings",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/72653-resolving-broker-connectivity-issues-in-message queue",
+    "component": "Message Queue",
+    "issue_type": "Broker Connectivity Issues"
+  },
+  {
+    "description": "Impact Level: Low\nAffected Service: Data Analytics\nComponent: Authentication Service\nIssue: High Authentication Latency\n\nMultiple users reported high authentication latency in the Authentication Service system. This is affecting Data Analytics functionality.\nInitial investigation shows potential configuration issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Check Authentication Service health status\n2. Analyze recent changes and deployments\n3. Investigate root cause and apply fix\n4. Test functionality\n5. Update runbook with findings",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/19417-resolving-high-authentication-latency-in-authentication service",
+    "component": "Authentication Service",
+    "issue_type": "High Authentication Latency"
+  },
+  {
+    "description": "Impact Level: Critical\nAffected Service: Internal Tools\nComponent: Load Balancer\nIssue: Configuration Sync Issues\n\nMultiple users reported configuration sync issues in the Load Balancer system. This is affecting Internal Tools functionality.\nInitial investigation shows potential resource issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Check Load Balancer health status\n2. Analyze recent changes and deployments\n3. Investigate root cause and apply fix\n4. Test functionality\n5. Update runbook with findings",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/68003-resolving-configuration-sync-issues-in-load balancer",
+    "component": "Load Balancer",
+    "issue_type": "Configuration Sync Issues"
+  },
+  {
+    "description": "Impact Level: Critical\nAffected Service: Customer Portal\nComponent: Database\nIssue: Storage Space Critical\n\nMultiple users reported storage space critical in the Database system. This is affecting Customer Portal functionality.\nInitial investigation shows potential resource issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Assess impact on dependent services\n2. Review Database configuration\n3. Investigate root cause and apply fix\n4. Implement preventive measures\n5. Update monitoring thresholds",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/84476-resolving-storage-space-critical-in-database",
+    "component": "Database",
+    "issue_type": "Storage Space Critical"
+  },
+  {
+    "description": "Impact Level: Low\nAffected Service: User Authentication\nComponent: Load Balancer\nIssue: Connection Timeouts\n\nMultiple users reported connection timeouts in the Load Balancer system. This is affecting User Authentication functionality.\nInitial investigation shows potential system issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Assess impact on dependent services\n2. Review Load Balancer configuration\n3. Investigate root cause and apply fix\n4. Implement preventive measures\n5. Update monitoring thresholds",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/76844-resolving-connection-timeouts-in-load balancer",
+    "component": "Load Balancer",
+    "issue_type": "Connection Timeouts"
+  },
+  {
+    "description": "Impact Level: Medium\nAffected Service: Data Analytics\nComponent: Load Balancer\nIssue: Connection Timeouts\n\nMultiple users reported connection timeouts in the Load Balancer system. This is affecting Data Analytics functionality.\nInitial investigation shows potential system issues.\nImmediate attention required to prevent service degradation.",
+    "resolution_process": "1. Identify affected Load Balancer instances\n2. Review system metrics and logs\n3. Investigate root cause and apply fix\n4. Validate service restoration\n5. Document findings in post-mortem",
+    "kb_article_link": "https://support.platform.company.com/kb/articles/53755-resolving-connection-timeouts-in-load balancer",
+    "component": "Load Balancer",
+    "issue_type": "Connection Timeouts"
+  }
+]
