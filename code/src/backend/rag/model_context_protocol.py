@@ -44,13 +44,15 @@ class ModelContextProtocol:
         )
 
     def _format_context_for_model(self, context: ModelContext) -> str:
-
         """Format the context for the model input."""
         context_parts = [
-            "=== Original Query ===\n",
+            "=== System Instructions ===\n",
+            self.rag_chain.system_prompt,
+            "\n=== Original Query ===\n",
             context.original_query,
             "\n=== Retrieved Context ===\n"
         ]
+        
         for i, (doc, metadata) in enumerate(zip(context.retrieved_documents, context.metadata), 1):
             context_parts.append(
                 f"Document {i} (Source: {metadata.source}, Relevance: {metadata.relevance_score:.2f}):\n"
