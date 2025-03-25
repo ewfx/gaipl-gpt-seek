@@ -272,8 +272,13 @@ export const ChatInterface: React.FC<ChatInterfaceProps> = ({ initialMessages = 
       const assistantMessage: Message = {
         id: (Date.now() + 1).toString(),
         type: 'assistant',
-        content: data.result,
-        sources: data.sources,
+        content: data.response,
+        sources: data.context.retrieved_documents.map((doc: any) => ({
+          source: doc.source,
+          score: doc.score,
+          chunk_size: doc.chunk_size,
+          chunk_overlap: doc.chunk_overlap
+        }))
       };
 
       setMessages(prev => [...prev, assistantMessage]);

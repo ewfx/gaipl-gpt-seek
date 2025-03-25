@@ -35,22 +35,22 @@ class ModelContextProtocol:
     def _create_context_metadata(self, doc: Dict) -> ContextMetadata:
         """Create metadata for a context document."""
         return ContextMetadata(
-            source=doc["metadata"].get("source", "Unknown"),
+            source=doc.get("source", "Unknown"),
             relevance_score=doc.get("score", 0.0),
             chunk_info={
-                "size": doc["metadata"].get("chunk_size", "Unknown"),
-                "overlap": doc["metadata"].get("chunk_overlap", "Unknown")
+                "size": doc.get("chunk_size", "Unknown"),
+                "overlap": doc.get("chunk_overlap", "Unknown")
             }
         )
 
     def _format_context_for_model(self, context: ModelContext) -> str:
+
         """Format the context for the model input."""
         context_parts = [
             "=== Original Query ===\n",
             context.original_query,
             "\n=== Retrieved Context ===\n"
         ]
-        
         for i, (doc, metadata) in enumerate(zip(context.retrieved_documents, context.metadata), 1):
             context_parts.append(
                 f"Document {i} (Source: {metadata.source}, Relevance: {metadata.relevance_score:.2f}):\n"
@@ -88,13 +88,11 @@ class ModelContextProtocol:
 
         # Retrieve relevant documents using RAG
         rag_result = await self.rag_chain.query(query, num_docs=self.max_context_documents)
-        
         # Create context metadata
         context_metadata = [
             self._create_context_metadata(doc)
             for doc in rag_result["sources"]
         ]
-        
         # Create model context
         model_context = ModelContext(
             original_query=query,

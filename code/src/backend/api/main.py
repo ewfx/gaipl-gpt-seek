@@ -26,8 +26,18 @@ app.add_middleware(
 os.makedirs(os.path.join(os.getcwd(),ARTIFACTS_DIR), exist_ok=True)
 os.makedirs(os.path.join(os.getcwd(),DATA_DIR), exist_ok=True)
 
-document_processor = DocumentProcessor()
-vector_store = VectorStoreManager()
+RAG_AVAILABLE = False
+VECTOR_STORE = False
+
+try:
+    document_processor = DocumentProcessor()
+    vector_store = VectorStoreManager()
+    RAG_AVAILABLE = True
+    VECTOR_STORE = False
+except:
+    print("Not available")
+    
+
 
 rag_system = IntegratedRAGSystem(
     use_cache=True,
@@ -48,7 +58,7 @@ request: QueryRequest
             additional_context=request.additional_context,
             force_refresh=request.force_refresh
         )
-        
+        print(result)
         return result  # This will include both response and context information
         
     except Exception as e:
@@ -77,8 +87,7 @@ async def upload_document(file: UploadFile = File(...)):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-RAG_AVAILABLE = True
-vector_store_manager = True 
+
 
 
 @app.get("/health")
@@ -87,7 +96,7 @@ async def health_check():
     health_status = {
         "status": "healthy",
         "rag_system": "available" if RAG_AVAILABLE else "unavailable",
-        "vector_store": "available" if vector_store_manager else "unavailable",
+        "vector_store": "available" if VECTOR_STORE else "unavailable",
         "ollama": "available"
     }
     # if RAG_AVAILABLE and rag_chain:

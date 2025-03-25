@@ -90,7 +90,8 @@ class RAGChain:
                 "source": doc["metadata"].get("source", "Unknown"),
                 "score": doc.get("score", 0.0),
                 "chunk_size": doc["metadata"].get("chunk_size", "Unknown"),
-                "chunk_overlap": doc["metadata"].get("chunk_overlap", "Unknown")
+                "chunk_overlap": doc["metadata"].get("chunk_overlap", "Unknown"),
+                "content": doc.get('content')
             }
             for doc in relevant_docs
         ]
