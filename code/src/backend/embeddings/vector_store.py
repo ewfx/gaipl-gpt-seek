@@ -80,8 +80,8 @@ class VectorStoreManager:
         """Load the vector store and documents from disk."""
         # Load FAISS index
         self.index = faiss.read_index(os.path.join(os.getcwd(),directory, "index.faiss"))
-        print(os.path.join(os.getcwd(),directory))
+        # print(os.path.join(os.getcwd(),directory))
         # Load documents
         with open(os.path.join(os.getcwd(),directory, "documents.pkl"), "rb") as f:
             self.documents = pickle.load(f) 
-        print(self.documents)
+        # print(self.documents)

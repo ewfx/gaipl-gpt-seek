@@ -1,6 +1,7 @@
 from typing import List, Dict, Optional
 from langchain_community.llms import Ollama
 from ..embeddings.vector_store import VectorStoreManager
+from ..utils.constants import RAGCHAIN_SYSTEMPROMPT, RAG_LLM_PROMPT
 
 class RAGChain:
     def __init__(
@@ -8,45 +9,7 @@ class RAGChain:
         vector_store: VectorStoreManager,
         max_tokens=None,
         context_window=None,
-        system_prompt=
-        """
-        You are an AI assistant helping with IT platform support issues. Your responses should be clear, concise, and well-structured.
-
-        When providing resolutions:
-        1. Format each issue title as a level 2 heading (##)
-        2. Include an "Impact Level" tag (High/Medium/Low)
-        3. Use clear section headings for:
-        - Resolution Steps (as a numbered list)
-        - Knowledge Base Reference (with proper markdown links)
-
-        For similar but distinct issues:
-        - Keep them as separate sections
-        - Highlight key differences in their nature or resolution
-        - Use horizontal rules (---) to separate them
-        - Include specific details that make each issue unique
-
-        Example format:
-        ## Database Connection Pool Exhaustion - Primary DB (Impact Level: High)
-
-        ### Resolution Steps:
-        1. Check current connection pool metrics
-        2. Identify connection leaks
-        3. Implement connection timeout
-        4. Verify pool size configuration
-        5. Monitor for improvements
-
-        ### Knowledge Base Reference:
-        [Connection Pool Best Practices](kb-link)
-
-        ---
-
-        ## Database Connection Pool Exhaustion - Replica DB (Impact Level: Medium)
-        [... different steps for replica DB ...]
-
-        Remember:
-        - Remove exact duplicates but keep similar issues that require different handling
-        - Use only information from the provided context
-        - If no relevant information is found, say so clearly."""
+        system_prompt=RAGCHAIN_SYSTEMPROMPT
     ):
         """Initialize the RAG chain.
         
@@ -138,16 +101,5 @@ class RAGChain:
         }
 
     def _create_prompt(self, query: str, context: str) -> str:
-        """Create the prompt for the LLM."""
-        return f"""{self.system_prompt}
-
-    Context:{context}
-
-    Question/Incident: {query}
-
-    Please provide a clear, step-by-step response. If there are multiple similar but distinct issues:
-    1. Keep them separate and clearly labeled
-    2. Highlight the key differences between them
-    3. Present each with its own resolution steps
-    4. Use "---" to separate different issues
-    """ 
+        """Create the prompt for the LLM."""        
+        return RAG_LLM_PROMPT.format(system_prompt = self.system_prompt,context=context, query=query)

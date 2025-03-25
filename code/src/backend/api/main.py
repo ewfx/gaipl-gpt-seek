@@ -1,6 +1,5 @@
 from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
 import os
 import shutil
 from typing import List, Dict, Optional
@@ -9,6 +8,8 @@ import uvicorn
 from ..embeddings.document_processor import DocumentProcessor
 from ..embeddings.vector_store import VectorStoreManager
 from ..rag.complete_pipeline import IntegratedRAGSystem
+from ..utils.constants import ARTIFACTS_DIR, DATA_DIR
+from ..utils.pydantic_classes import QueryRequest, QueryResponse, ExecuteCommandRequest
 
 app = FastAPI(title="Platform Support RAG API")
 
@@ -21,9 +22,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Initialize components
-ARTIFACTS_DIR = "backend/vstore_artifacts"
-DATA_DIR = "backend/incident_data"
+
 os.makedirs(os.path.join(os.getcwd(),ARTIFACTS_DIR), exist_ok=True)
 os.makedirs(os.path.join(os.getcwd(),DATA_DIR), exist_ok=True)
 
@@ -36,16 +35,6 @@ rag_system = IntegratedRAGSystem(
     max_context_documents=4,
     context_window_size=2000
 )
-
-
-class QueryRequest(BaseModel):
-    query: str
-    additional_context: Optional[Dict] = None
-    force_refresh: bool = False
-
-class QueryResponse(BaseModel):
-    response: str
-    sources: List[Dict]
 
 @app.post("/query")
 async def query(
@@ -91,6 +80,31 @@ async def upload_document(file: UploadFile = File(...)):
 async def health_check():
     """Check the health of the API."""
     return {"status": "healthy"}
+
+
+@app.post("/execute", tags=["Commands"])
+async def execute_command(request: ExecuteCommandRequest):
+    try:
+        return {
+            "status": "success",
+            "output": "Command executed successfully\nOutput: Mock command output",
+            "splunk_link": f"https://splunk.example.com/search?q=search%20command%3D{request.command}"
+        }
+    except Exception as e:
+        return {
+            "status": "error",
+            "output": f"Error executing command: {str(e)}",
+            "splunk_link": ""
+        }
+
+@app.get("/")
+async def root():
+    return {
+        "name": "Incident Resolution Gen-AI powered Platform",
+        "version": "0.1.0",
+        "status": "operational"
+    }
+
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000) 

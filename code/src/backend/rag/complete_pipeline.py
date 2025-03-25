@@ -1,10 +1,9 @@
-import asyncio
 from typing import Dict, Optional
 from ..embeddings.vector_store import VectorStoreManager
 from .rag_pipeline import RAGChain
 from .model_context_protocol import ModelContextProtocol
 from ..utils.redis_cache import RedisCacheManager
-vstoreindex_directory = 'backend/vstore_artifacts'
+from ..utils.constants import ARTIFACTS_DIR
 
 class IntegratedRAGSystem:
     """Complete integration of RAG, Model Context Protocol, and Redis caching."""
@@ -26,7 +25,7 @@ class IntegratedRAGSystem:
         """
         # Initialize core components
         self.vector_store = VectorStoreManager()
-        self.vector_store.load(vstoreindex_directory)
+        self.vector_store.load(ARTIFACTS_DIR)
         self.rag_chain = RAGChain(
             vector_store=self.vector_store,
             max_tokens=context_window_size

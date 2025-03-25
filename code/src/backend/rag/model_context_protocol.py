@@ -1,23 +1,7 @@
-from typing import List, Dict, Optional, Any
-from dataclasses import dataclass
+from typing import Dict, Optional, Any
 from .rag_pipeline import RAGChain
 from ..utils.redis_cache import RedisCacheManager
-
-@dataclass
-class ContextMetadata:
-    """Metadata for context information."""
-    source: str
-    relevance_score: float
-    chunk_info: Dict[str, Any]
-    timestamp: Optional[str] = None
-
-@dataclass
-class ModelContext:
-    """Structured context for the model."""
-    original_query: str
-    retrieved_documents: List[Dict]
-    metadata: List[ContextMetadata]
-    additional_context: Optional[Dict] = None
+from ..utils.pydantic_classes import ContextMetadata, ModelContext
 
 class ModelContextProtocol:
     """Implements the Model Context Protocol for enhanced RAG."""
