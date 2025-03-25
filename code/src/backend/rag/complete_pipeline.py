@@ -26,6 +26,7 @@ class IntegratedRAGSystem:
         # Initialize core components
         self.vector_store = VectorStoreManager()
         self.vector_store.load(ARTIFACTS_DIR)
+        #print(self.vector_store.documents)
         self.rag_chain = RAGChain(
             vector_store=self.vector_store,
             max_tokens=context_window_size

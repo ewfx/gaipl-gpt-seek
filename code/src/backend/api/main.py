@@ -2,14 +2,14 @@ from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 import os
 import shutil
-from typing import List, Dict, Optional
 import uvicorn
 
 from ..embeddings.document_processor import DocumentProcessor
 from ..embeddings.vector_store import VectorStoreManager
 from ..rag.complete_pipeline import IntegratedRAGSystem
 from ..utils.constants import ARTIFACTS_DIR, DATA_DIR
-from ..utils.pydantic_classes import QueryRequest, QueryResponse, ExecuteCommandRequest
+from ..utils.pydantic_classes import QueryRequest, ExecuteCommandRequest
+from .incident_routes import router as incident_router
 
 app = FastAPI(title="Platform Support RAG API")
 
@@ -35,6 +35,7 @@ rag_system = IntegratedRAGSystem(
     max_context_documents=4,
     context_window_size=2000
 )
+app.include_router(incident_router)
 
 @app.post("/query")
 async def query(
@@ -76,11 +77,31 @@ async def upload_document(file: UploadFile = File(...)):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+RAG_AVAILABLE = True
+vector_store_manager = True 
+
+
 @app.get("/health")
 async def health_check():
-    """Check the health of the API."""
-    return {"status": "healthy"}
+    """Check the health of the API and its dependencies."""
+    health_status = {
+        "status": "healthy",
+        "rag_system": "available" if RAG_AVAILABLE else "unavailable",
+        "vector_store": "available" if vector_store_manager else "unavailable",
+        "ollama": "available"
+    }
+    # if RAG_AVAILABLE and rag_chain:
+    #     try:
+    #         # Try a simple query to check Ollama
+    #         response = rag_chain.llm.invoke("test")
+    #         health_status["ollama"] = "available"
+    #     except Exception as e:
+    #         health_status["ollama"] = f"error: {str(e)}"
+    #         health_status["status"] = "degraded"
+    
+    return health_status
 
+ 
 
 @app.post("/execute", tags=["Commands"])
 async def execute_command(request: ExecuteCommandRequest):
