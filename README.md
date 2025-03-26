@@ -28,7 +28,7 @@ Key Features:
 
 📹 [Presentation + Video Demo](artifacts/demo/hackathon%20demo%20video.mp4) |   [Google Drive Link](https://drive.google.com/file/d/1SWObk1NMxSSSuhvrcGHs9jWRQoL8HbLa/view?usp=drive_link)  
 
-[Video Only](code/src/docs/images/dashboard1.png)
+[Video Only](code/src/hackathon-video-prototype-demo-only.mp4)
 
 
 ## 🖼️ Screenshots:
