@@ -105,6 +105,10 @@ cd gaipl-gpt-seek
 ```
 
 2. Create a virtual environment and activate it:
+cd gaipl-gpt-seek/code/src/
+```
+
+2. Setup backend and create a virtual environment and activate it:
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
@@ -112,36 +116,58 @@ source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 
 3. Install dependencies:
 ```bash
+cd backend
 pip install -r requirements.txt
 ```
 
 4. Set up the frontend:
 ```bash
-cd code/ui
+cd gaipl-gpt-seek/code/src/frontend/
 npm install
 ```
 
 5. Make sure Ollama is running with your preferred model:
 ```bash
-ollama run mistral  # or your preferred model
+ollama pull mistral
+ollama serve  # or your preferred model
 ```
 
-6. Initialize the vector store with contextual incident dataset:
+6. **Redis Installation**:
 ```bash
-cd code/src
+# For macOS
+brew install redis
+
+# For Ubuntu/Debian
+sudo apt-get update
+sudo apt-get install redis-server
+```
+
+7. **Start Redis Server**:
+```bash
+# Start Redis server
+redis-server
+```
+
+
+8. Initialize the vector store with contextual incident dataset:
+```bash
+cd code/src/backend/
 python init_vectorstore.py
 ```
 
 ### Running the Application
+
 1. Start the FastAPI backend:
 ```bash
-cd code/src/api
-uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+cd code/src/
+uvicorn backend.api.main:app --reloa
 ```
+
+
 
 2. Start the frontend development server:
 ```bash
-cd code/ui
+cd code/src/frontend/
 npm run dev
 ```
 
@@ -164,15 +190,17 @@ npm run dev
 ```
 gaipl-gpt-seek/
 ├── code/
-│   ├── src/
-│   │   ├── api/           # FastAPI backend
-|   |
-│   │   ├── embeddings/    # Vector store and embeddings
-│   │   ├── rag/          # RAG implementation
-│   │   └── utils/        # Utility functions
-│   └── ui/               # Next.js frontend
-├── artifacts/            # Vector store data
-└── requirements.txt     # Python dependencies
+│   └── src/
+│       ├── backend/        # FastAPI backend
+│       │   ├── api/
+│       │   ├── embeddings/
+│       │   ├── rag/
+│       │   ├── utils/
+│       │   └── requirements.txt
+│       └── frontend/       # Next.js frontend
+|            ├── components/
+|            ├── pages/
+|            └── package.json
 ```
 
 ## Usage
@@ -217,8 +245,6 @@ gaipl-gpt-seek/
 
 1. Backend changes:
    - Add new routes in `src/api/incident_routes.py`
-   - Update models in `src/api/models.py`
-   - Add new services in `src/services/`
 
 2. Frontend changes:
    - Add new components in `ui/components/`
