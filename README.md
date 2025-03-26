@@ -30,7 +30,8 @@ Key Features:
 
 [![Video Only](code/src/docs/images/dashboard1.png)](code/src/hackathon-video-prototype-demo-only.mp4)
 
-🖼️ Screenshots:
+
+## 🖼️ Screenshots:
 
 ### Incident Management View
 ![Dashboard](code/src/docs/images/dashboard1.png)
