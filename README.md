@@ -149,7 +149,14 @@ redis-server
 ```
 
 
-8. Initialize the vector store with contextual incident dataset:
+
+8. Generate incident dataset:
+```bash
+# Generate sample incident documents for RAG
+python code/src/backend/incident_data/generate_incident_dataset.py
+```
+
+9. Initialize the vector store with contextual incident dataset created aboce:
 ```bash
 cd code/src/backend/
 python init_vectorstore.py
