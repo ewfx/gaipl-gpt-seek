@@ -26,7 +26,12 @@ Key Features:
 
 ## 🎥 Demo
 
-📹 [Video Demo](artifacts/demo/hackathon%20demo%20video.mp4) [Google Drive Link](https://drive.google.com/file/d/1SWObk1NMxSSSuhvrcGHs9jWRQoL8HbLa/view?usp=drive_link)  
+📹 [Presentation + Video Demo](artifacts/demo/hackathon%20demo%20video.mp4) |   [Google Drive Link](https://drive.google.com/file/d/1SWObk1NMxSSSuhvrcGHs9jWRQoL8HbLa/view?usp=drive_link)  
+
+[Video Only] 
+<video src="https://user-images.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/assets/video.mp4" controls="controls" style="max-width: 730px;">
+</video>
+
 🖼️ Screenshots:
 
 ### Incident Management View
@@ -164,9 +169,8 @@ python init_vectorstore.py
 1. Start the FastAPI backend:
 ```bash
 cd code/src/
-uvicorn backend.api.main:app --reloa
+uvicorn backend.api.main:app --reload
 ```
-
 
 
 2. Start the frontend development server:
