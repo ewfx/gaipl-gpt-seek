@@ -29,7 +29,7 @@ Key Features:
 📹 [Presentation + Video Demo](artifacts/demo/hackathon%20demo%20video.mp4) |   [Google Drive Link](https://drive.google.com/file/d/1SWObk1NMxSSSuhvrcGHs9jWRQoL8HbLa/view?usp=drive_link)  
 
 [Video Only] 
-<video src="https://user-images.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/assets/video.mp4" controls="controls" style="max-width: 730px;">
+<video src="https://github.com/ewfx/gaipl-gpt-seek/blob/main/code/src/hackathon-video-prototype-demo-only.mp4" controls="controls" style="max-width: 730px;">
 </video>
 
 🖼️ Screenshots:
