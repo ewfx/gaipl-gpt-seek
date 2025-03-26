@@ -180,10 +180,9 @@ npm run dev
 - 🔹 AI/ML: Ollama (Mistral) with RAG implementation
 
 ## 👥 Team
-- **Azeez Dandawala** - [GitHub](#https://github.com/azeez-72) | [LinkedIn](#https://www.linkedin.com/in/azeez-dandawala/)
-- **Abhishek Dharmadhikari** - [GitHub](#https://github.com/abhi25072002) | [LinkedIn](#https://www.linkedin.com/in/abhishek-dharmadhikari-054682218/)
-
-- **Abisinan A.** - [GitHub](#https://github.com/abisinan) | [LinkedIn](#https://www.linkedin.com/in/abisinan-a-54bb332b/)
+- **Azeez Dandawala** - [GitHub](https://github.com/azeez-72) | [LinkedIn](https://www.linkedin.com/in/azeez-dandawala/)
+- **Abhishek Dharmadhikari** - [GitHub](https://github.com/abhi25072002) | [LinkedIn](https://www.linkedin.com/in/abhishek-dharmadhikari-054682218/)
+- **Abisinan A.** - [GitHub](https://github.com/abisinan) | [LinkedIn](https://www.linkedin.com/in/abisinan-a-54bb332b/)
 
 ## Project Structure
 
