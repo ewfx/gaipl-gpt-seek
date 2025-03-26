@@ -26,7 +26,7 @@ Key Features:
 
 ## 🎥 Demo
 
-📹 [Video Demo](#) (if applicable)  
+📹 [Video Demo](artifacts/demo/hackathon%20demo%20video.mp4) [Google Drive Link](https://drive.google.com/file/d/1SWObk1NMxSSSuhvrcGHs9jWRQoL8HbLa/view?usp=drive_link)  
 🖼️ Screenshots:
 
 ### Incident Management View
@@ -104,12 +104,9 @@ git clone <repository-url>
 cd gaipl-gpt-seek
 ```
 
-2. Create a virtual environment and activate it:
-cd gaipl-gpt-seek/code/src/
-```
-
 2. Setup backend and create a virtual environment and activate it:
 ```bash
+cd gaipl-gpt-seek/code/src/
 python -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 ```
