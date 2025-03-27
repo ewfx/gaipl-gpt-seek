@@ -24,11 +24,11 @@ Key Features:
 
 🚀 Coming Soon: Context-based data extraction for connectivity, dependencies, and more!
 
-## 🎥 Demo
+## 🎥 Demo (Videos)
 
-📹 [Presentation + Video Demo](artifacts/demo/hackathon%20demo%20video.mp4) |   [Google Drive Link](https://drive.google.com/file/d/1SWObk1NMxSSSuhvrcGHs9jWRQoL8HbLa/view?usp=drive_link)  
+📹 [Presentation + Project Demo](artifacts/demo/gptseek_project_presentation.mp4) |   [Google Drive Link](https://drive.google.com/file/d/1lFFCYUfcVWzkae_J5P4NNZAKDSXXIzdA/view?usp=sharing)  
 
-[Video Only](code/src/hackathon-video-prototype-demo-only.mp4)
+📹 [Project Demo Only](code/src/gptseek_project_demo_only.mp4)
 
 
 ## 🖼️ Screenshots:
