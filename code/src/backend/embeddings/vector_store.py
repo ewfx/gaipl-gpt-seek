@@ -45,18 +45,8 @@ class VectorStoreManager:
             if idx < len(self.documents):  # Ensure index is valid
                 doc = self.documents[idx].copy()
                 
-                # Convert L2 distance to cosine similarity-like score
-                # FAISS returns squared L2 distance, so we need to:
-                # 1. Take the square root to get L2 distance
-                # 2. Convert to a similarity score between 0 and 1
                 l2_distance = np.sqrt(float(distances[0][i]))
                 
-                # Convert distance to similarity score
-                # Using a scaled exponential decay function
-                # This gives us a score that:
-                # - Is 1.0 for perfect matches (distance = 0)
-                # - Decays exponentially as distance increases
-                # - Is always between 0 and 1
                 similarity_score = np.exp(-l2_distance / self.dimension)
                 
                 doc["score"] = round(float(similarity_score), 4)
